@@ -5,6 +5,16 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="scroll.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .center-me {
+            /* position: absolute; */
+            /* top: 50%; */
+            /* left: 50%; */
+            /* transform: translatey(-50%); */
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
 </head>
 <div class="well" id="well">
     <section class="section panel" width="100%">
@@ -22,11 +32,12 @@
 
     <section class="section panel" width="100%">
         <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-6 bg-danger">
+            <div class="row h-100 text-center"
+                style="background: linear-gradient(90deg, rgba(253,151,167,1) 0%, rgba(253,151,167,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);">
+                <div class="col-6 center-me">
                     Hello
                 </div>
-                <div class="col-6 bg-warning">
+                <div class="col-6 center-me">
                     Hola
                 </div>
             </div>

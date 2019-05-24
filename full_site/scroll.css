@@ -6,7 +6,7 @@ body {
 .well {
     position: relative;
     overflow: hidden;
-    transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+    transition: .5s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .panel {
