@@ -5,7 +5,37 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="scroll.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,600&display=swap&subset=thai"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,600&display=swap" rel="stylesheet">
     <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Helvetica Neue", Helvetica, "Prompt", Arial, sans-serif;
+        }
+
+        h1.title {
+            font-family: 'Comfortaa';
+            font-weight: 600;
+            font-size: 85px;
+        }
+
+        h1.subtitle {
+            font-family: 'Comfortaa';
+            font-weight: 400;
+            font-size: 25px;
+        }
+
+        html,
+        body {
+            font-family: "Bai Jamjuree";
+        }
+
         .center-me {
             /* position: absolute; */
             /* top: 50%; */
@@ -13,6 +43,19 @@
             /* transform: translatey(-50%); */
             margin-top: auto;
             margin-bottom: auto;
+        }
+
+        .bg-pk-wt {
+            background: linear-gradient(90deg, rgba(253, 151, 167, 1) 0%, rgba(253, 151, 167, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        .bg-lb-lp {
+            background: linear-gradient(101deg, rgba(0, 183, 230, 1) 0%, rgba(0, 183, 230, 1) 50%, rgba(244, 194, 172, 1) 50%, rgba(244, 194, 172, 1) 100%);
+        }
+
+        .in-wt {
+            background: white;
+            padding: 1em;
         }
     </style>
 </head>
@@ -32,16 +75,43 @@
 
     <section class="section panel" width="100%">
         <div class="container-fluid h-100">
-            <div class="row h-100 text-center"
-                style="background: linear-gradient(90deg, rgba(253,151,167,1) 0%, rgba(253,151,167,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);">
+            <div class="row h-100 text-center bg-pk-wt">
                 <div class="col-6 center-me">
-                    Hello
+                    <img src="https://via.placeholder.com/300" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-6 center-me">
-                    Hola
+                    <h1>ความเป็นส่วนตัวบนอินเทอร์เน็ต</h1>
+                    <p>คุณไม่ได้ไร้ตัวตนบนโลกอินเทอร์เน็ต
+                        จากข้อมูลที่แสดงในหน้าที่แล้วแสดงให้เห็นว่าคุณสามารถูกล่วงรู้ข้อมูลและสามารถตามตัวได้อยู่เสมอ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section panel" width="100%">
+        <div class="container-fluid h-100 text-center center-me">
+            <div class="row h-100 text-center bg-lb-lp">
+                <div class="col center-me in-wt">
+                    <h1 class="title">PRICON</h1>
+                    <h1 class="subtitle">PRIVACY CONCERN</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section panel" width="100%">
+        <div class="container-fluid h-100 center-me">
+            <div class="row h-100">
+                <div class="col-4">
+                    <img style="width: 35vw" src="udhr-r.png"/>
+                </div>
+                <div class="col-8 center-me">
+                    <h1>ปฏิญญาสากลว่าด้วยสิทธิมนุษยชน ข้อที่ <span style="background: black;color: white; font-weight: 700; padding: 5px;">12</span></h1>
+                    <p>บุคคลใด ๆ จะถูกแทรกสอดโดยพลการในความเป็นอยู่ส่วนตัวในครอบครัว ในเคหสถานหรือในการสื่อสาร หรือจะถูกลบหลู่ในเกียรติยศและชื่อเสียงไม่ได้ ทุกคนมีสิทธิที่จะได้รับความคุ้มครองของกฎหมายต่อการแทรกสอด หรือการลบหลู่ดังกล่าวนั้น</p>
                 </div>
             </div>
         </div>
     </section>
 </div>
-<script type="text/javascript" src="scroll.js"></script>
+<!-- <script type="text/javascript" src="scroll.js"></script> -->
