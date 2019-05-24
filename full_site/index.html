@@ -4,42 +4,65 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
 </head>
+<style>
+    body {
+        overflow: hidden;
+        margin: 0;
+        font-family: "Limelight", sans-serif;
+        text-rendering: optimizeLegibility;
+    }
 
-<body>
-    <section class="masthead" width="100%">
+    .well {
+        position: relative;
+        overflow: hidden;
+        transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+    }
+
+    .top {
+        font-size: 80%;
+        color: hsla(0, 0%, 100%, .25);
+        position: relative;
+        top: -.2em;
+        cursor: pointer;
+    }
+
+    .panel {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 10vmin;
+        /* padding: 1em; */
+        box-sizing: border-box;
+        color: hsla(0, 0%, 100%, .1);
+        cursor: default;
+    }
+</style>
+<div class="well" id="well">
+    <section class="section panel" width="100%">
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col-6 bg-primary">
-
+                    Hello
                 </div>
                 <div class="col-6 bg-dark">
-
+                    Hola
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="masthead" width="100%">
-            <div class="container-fluid h-100">
-                <div class="row h-100">
-                    <div class="col-6 bg-danger">
-    
-                    </div>
-                    <div class="col-6 bg-warning">
-    
-                    </div>
+    <section class="section panel" width="100%">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-6 bg-danger">
+                    Hello
+                </div>
+                <div class="col-6 bg-warning">
+                    Hola
                 </div>
             </div>
-        </section>
-</body>
-<script type="text/javascript" src="fullpage.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#fullpage').fullpage({ //options here
-            autoScrolling: true,
-            scrollHorizontally: true
-        });
-    });
-</script>
+        </div>
+    </section>
+</div>
+<script type="text/javascript" src="scroll.js"></script>
