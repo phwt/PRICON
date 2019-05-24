@@ -1,0 +1,58 @@
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        html,
+        body {
+            background: #ebeef4;
+        }
+
+        input.form-control {
+            /* width: 10vh; */
+        }
+
+        .tamaraikordai {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="blurme">
+        <div class="text-white text-center" style="background: #3b5998;padding:3%">
+            <img style="height: 3.4vh" src="fb-low.png" />
+        </div>
+        <div class="container text-center" width="20vh"><br>
+            <form>
+                <input class="form-control" placeholder="Phone number or E-Mail" />
+                <input type="password" class="form-control" placeholder="Password" />
+                <br><button class="btn btn-block btn-primary">Sign in</button>
+                <br>- OR - <br>
+                <br><button class="btn btn-success">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <span class="tamaraikordai text-center">
+            <h1>หยุด!</h1>
+            <p>หน้าเว็บนี้เป็นหน้าเว็บปลอม</p>
+        </span>
+</body>
+<script>
+    $("body").click(function () {
+        $(".blurme").css("filter", "blur(5px)");
+        $('.tamaraikordai').show();
+    });
+</script>
