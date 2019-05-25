@@ -110,7 +110,7 @@
                             <span id="ip_loc" class="hideme">Bangkok, Thailand</span></br>
                             <span id="ip_isp" class="hideme">&nbsp;</span>
                         </h1><br><br>
-                        <button class="btn btn-lg text-white hideme"
+                        <button onclick="scrollToAnchor('section-2')" class="btn btn-lg text-white hideme"
                             style="background: #6E61FA; font-weight: 300">นี่ใช่ข้อมูลของคุณหรือไม่?</button>
                     </div>
                     <div class="col-6 center-me text-center">
@@ -120,7 +120,7 @@
             </div>
         </section>
 
-        <section class="section" width="100%">
+        <section class="section" width="100%" sname="section-2">
             <div class="container-fluid">
                 <div class="row bg-pk-wt" style="padding: 5% 5% 15% 5%">
                     <div class="col-8 shadow-lg bg-white gb-box">
@@ -302,11 +302,11 @@
                     </table>
                 </div>
             </div>
-            <a href="" class="text-center text-muted"><u>ข้าม</u></a>
+            <a onclick="selNone()" class="text-center text-muted"><u>ข้าม</u></a>
         </div>
     </section>
 
-    <section class="section" width="100%">
+    <section class="section" width="100%" sname="ads">
         <div class="container">
             <div class="row">
                 <div class="col-7 text-center center-me">
@@ -328,12 +328,12 @@
                     </p>
                 </div>
                 <div class="col-5">
-                    <img src="https://via.placeholder.com/400x500" />
+                    <img id="ads-1" width="100%" src="https://via.placeholder.com/400x500" />
                 </div>
 
 
                 <div class="col-5">
-                    <img src="https://via.placeholder.com/400x500" />
+                    <img id="ads-2" width="100%" src="https://via.placeholder.com/400x500" />
                 </div>
                 <div class="col-7 text-center center-me">
                     <p>
