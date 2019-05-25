@@ -26,3 +26,14 @@ $(document).ready(function() {
 function selNone(){
     showAds("");
 }
+
+$('#choose').on('appear', function(event, $all_appeared_elements) {
+    // this element is now inside browser viewport
+    alert();
+});
+// $(document).on('scroll', function() {
+//     console.log("sad");
+//     if($(this).scrollTop()>=$('#choose').position().top){
+//         console.log("WOW");
+//     }
+// })

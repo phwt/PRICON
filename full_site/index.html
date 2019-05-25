@@ -4,6 +4,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="jquery.appear.js"></script>
     <link href="scroll.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,500,600&display=swap" rel="stylesheet">
@@ -93,8 +94,12 @@
         .hideme {
             display: none;
         }
-        .typ{
+
+        .typ {
             display: none;
+        }
+        .prod-sel:hover{
+            cursor: pointer;
         }
     </style>
 </head>
@@ -143,11 +148,11 @@
         <div class="container-fluid center-me">
             <div class="row">
                 <div class="col-3" style="padding:0;">
-                    <img src="https://via.placeholder.com/440x700" class="img-fluid" alt="Responsive image">
+                    <img src="s1.jpg" class="img-fluid" alt="Responsive image">
                 </div>
 
                 <div class="col-3 shadow-lg text-center" style="padding:0;">
-                    <img src="https://via.placeholder.com/440x650" class="img-fluid" alt="Responsive image">
+                    <img src="s2.jpg" class="img-fluid" alt="Responsive image">
                     <div style="padding: 1.4em">
                         <h2 class="year-digit">1948 - 2019</h2>
                         Post-WWII - Information Age
@@ -155,11 +160,11 @@
                 </div>
 
                 <div class="col-3" style="padding:0;">
-                    <img src="https://via.placeholder.com/440x700" class="img-fluid" alt="Responsive image">
+                    <img src="s3.jpg" class="img-fluid" alt="Responsive image">
                 </div>
 
                 <div class="col-3" style="padding:0;">
-                    <img src="https://via.placeholder.com/440x700" class="img-fluid" alt="Responsive image">
+                    <img src="s4.jpg" class="img-fluid" alt="Responsive image">
                 </div>
             </div><br><br><br>
         </div>
@@ -243,113 +248,124 @@
             <div class="row table-hover" style="padding: 0 10% 0% 10%">
                 <div class="col-4 prod-sel bg-white center-flex bdr bdrb">
                     <table>
-                        <tr><td style="padding-bottom: 8px;">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Responsive image"></td>
-                        </tr><tr><td class="text-center">
+                        <tr>
+                            <td style="padding-bottom: 8px;">
+                                <img width="100" style="padding:20" src="sico/washing-machine.svg" class="img-fluid" alt="Responsive image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center" id="choose">
                                 เครื่องใช้ไฟฟ้า
                                 <span class="typ">elec</span>
-                        </td></tr>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="col-4 prod-sel bg-white center-flex bdr bdrb">
                     <table>
-                        <tr><td style="padding-bottom: 8px;">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Responsive image"></td>
-                        </tr><tr><td class="text-center">
+                        <tr>
+                            <td style="padding-bottom: 8px;">
+                                <img width="100" style="padding:20" src="sico/hanger.svg" class="img-fluid" alt="Responsive image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
                                 เครื่องแต่งกาย
                                 <span class="typ">appr</span>
-                        </td></tr>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="col-4 prod-sel bg-white center-flex bdrb">
                     <table>
-                        <tr><td style="padding-bottom: 8px;">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Responsive image"></td>
-                        </tr><tr><td class="text-center">
+                        <tr>
+                            <td style="padding-bottom: 8px;">
+                                <img width="100" style="padding:20" src="sico/smartphone-call.svg" class="img-fluid" alt="Responsive image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
                                 โทรศัพท์มือถือ
                                 <span class="typ">phone</span>
-                        </td></tr>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="col-4 prod-sel bg-white center-flex bdr">
                     <table>
-                        <tr><td style="padding-bottom: 8px;">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Responsive image"></td>
-                        </tr><tr><td class="text-center">
+                        <tr>
+                            <td style="padding-bottom: 8px;">
+                                <img width="100" style="padding:20" src="sico/football.svg" class="img-fluid" alt="Responsive image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
                                 กีฬาและการเดินทาง
                                 <span class="typ">sport</span>
-                        </td></tr>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="col-4 prod-sel bg-white center-flex bdr">
                     <table>
-                        <tr><td style="padding-bottom: 8px;">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Responsive image"></td>
-                        </tr><tr><td class="text-center">
+                        <tr>
+                            <td style="padding-bottom: 8px;">
+                                <img width="100" style="padding:20" src="sico/stars.svg" class="img-fluid" alt="Responsive image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
                                 สุขภาพความงาม
                                 <span class="typ">health</span>
-                        </td></tr>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="col-4 prod-sel bg-white center-flex">
                     <table>
-                        <tr><td style="padding-bottom: 8px;">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Responsive image"></td>
-                        </tr><tr><td class="text-center">
+                        <tr>
+                            <td style="padding-bottom: 8px;">
+                                <img width="100" style="padding:20" src="sico/roller.svg" class="img-fluid" alt="Responsive image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
                                 บ้านและไลฟ์สไตล์
                                 <span class="typ">lifes</span>
-                        </td></tr>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
             <a onclick="selNone()" class="text-center text-muted"><u>ข้าม</u></a>
         </div>
+        <a sname="acc"></a>
     </section>
-
-    <section class="section" width="100%" sname="acc">
+    <section class="section h-100" width="100%">
         <div class="container">
             <div class="row">
                 <div class="col-7 text-center center-me">
                     <h1 style="font-weight: 900; color:#DB3472; font-size: 35pt">ADS TARGETING</h1><br>
                     <p>
-                        Aliqua proident sit labore veniam. Proident excepteur qui proident anim Lorem aliqua aliqua non.
-                        Proident esse irure excepteur adipisicing non et anim anim sunt ullamco.Aute id occaecat amet
-                        pariatur
-                        labore eu non consectetur ullamco aliquip. Aute fugiat Lorem consectetur ut. Velit cupidatat
-                        enim
-                        excepteur amet commodo nostrud ea mollit. Esse deserunt cillum ipsum velit nulla.
-
-                        Laborum est consectetur est reprehenderit magna magna consequat. Commodo incididunt laboris
-                        aliquip
-                        cillum eu mollit officia do adipisicing labore velit veniam sunt qui. Ea laboris eiusmod non
-                        veniam
-                        dolore nulla mollit ullamco ipsum proident consequat consequat et. Ut ea aute adipisicing eu
-                        aliquip.
+                        โฆษณาบนอินเทอร์เน็ตในทุกวันนี้ต่างก็เป็นโฆษณาแบบเจาะกลุ่มผู้ใช้งาน
+                        โดยจะดึงเอาข้อมูลของผู้ใช้อินเทอร์เน็ตว่าสนใจในสิ่งใดขึ้นมาเป็นตัววัด ยกตัวอย่างเช่น
+                        สมมติว่าเราได้ค้นหานาฬิกาเรือนหนึ่งเมื่อวานนี้
+                        ในเวลาต่อมาเมื่อเราเปิดไปหน้าเว็บไหนต่างก็ต้องเจอกับหน้าต่างโฆษณานาฬิกาอยู่เรื่อยไป
                     </p>
                 </div>
                 <div class="col-5">
-                    <img id="a-1" width="100%" src="https://via.placeholder.com/400x500" />
+                    <img id="a-1" width="100%" src="https://via.placeholder.com/500x400" />
                 </div>
 
 
                 <div class="col-5">
-                    <img id="a-2" width="100%" src="https://via.placeholder.com/400x500" />
+                    <img id="a-2" width="100%" src="https://via.placeholder.com/500x400" />
                 </div>
                 <div class="col-7 text-center center-me">
                     <p>
-                        Aliqua proident sit labore veniam. Proident excepteur qui proident anim Lorem aliqua aliqua non.
-                        Proident esse irure excepteur adipisicing non et anim anim sunt ullamco.Aute id occaecat amet
-                        pariatur
-                        labore eu non consectetur ullamco aliquip. Aute fugiat Lorem consectetur ut. Velit cupidatat
-                        enim
-                        excepteur amet commodo nostrud ea mollit. Esse deserunt cillum ipsum velit nulla.
-
-                        Laborum est consectetur est reprehenderit magna magna consequat. Commodo incididunt laboris
-                        aliquip
-                        cillum eu mollit officia do adipisicing labore velit veniam sunt qui. Ea laboris eiusmod non
-                        veniam
-                        dolore nulla mollit ullamco ipsum proident consequat consequat et. Ut ea aute adipisicing eu
-                        aliquip.
+                        ทั้งนี้ข้อมูลความสนใจของเขาได้ถูกเอาไปอย่างไม่ถูกต้องดีนัก
+                        จากการที่ไม่แสดงรายละเอียดการขออนุญาตว่าจะนำข้อมูลของเราออกไปใช้งานที่ชัดเจนนักหรือในบางทีก็ไม่มีการขออนุญาตเลยแม้แต่นิดเดียว
+                        ซึ่งประเด็นนี้ได้เป็นที่ถกเถียงกันมาอยู่เป็นระยะเวลานานแล้วถึงความถูกต้องของสิทธิส่วนบุคคล
                     </p>
                 </div>
             </div>
