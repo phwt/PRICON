@@ -101,6 +101,16 @@
         .prod-sel:hover{
             cursor: pointer;
         }
+        @keyframes onblink{
+            0%   {color:white;}
+            50%  {color:#28A857;}
+            100% {color:white;}
+        }
+        .dotss {
+            animation-name: onblink;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+        }
     </style>
 </head>
 <div class="well" id="well">
@@ -111,7 +121,11 @@
                 <div class="row" style="padding: 15vh;">
                     <div class="col-1"></div>
                     <div class="col-5 center-me">
+                            <h4 class="hideme" style="background: white;color: #F84764;padding: 5 10 5 10">
+                                <span class="text-success dotss">●</span> Online <!--- <span id="ip_ip"></span>-->
+                            </h4>
                         <h1 style="font-weight: 800;line-height: 1.5em;font-size: 35pt">
+                            <img id="ip_flag" class="hideme" src="https://ipgeolocation.io/static/flags/th_64.png"/>
                             <span id="ip_loc" class="hideme">Bangkok, Thailand</span></br>
                             <span id="ip_isp" class="hideme">&nbsp;</span>
                         </h1><br><br>
@@ -249,7 +263,7 @@
                 <div class="col-4 prod-sel bg-white center-flex bdr bdrb">
                     <table>
                         <tr>
-                            <td style="padding-bottom: 8px;">
+                            <td class="text-center" style="padding-bottom: 8px;">
                                 <img width="100" style="padding:20" src="sico/washing-machine.svg" class="img-fluid" alt="Responsive image">
                             </td>
                         </tr>
@@ -264,7 +278,7 @@
                 <div class="col-4 prod-sel bg-white center-flex bdr bdrb">
                     <table>
                         <tr>
-                            <td style="padding-bottom: 8px;">
+                            <td class="text-center" style="padding-bottom: 8px;">
                                 <img width="100" style="padding:20" src="sico/hanger.svg" class="img-fluid" alt="Responsive image">
                             </td>
                         </tr>
@@ -279,7 +293,7 @@
                 <div class="col-4 prod-sel bg-white center-flex bdrb">
                     <table>
                         <tr>
-                            <td style="padding-bottom: 8px;">
+                            <td class="text-center" style="padding-bottom: 8px;">
                                 <img width="100" style="padding:20" src="sico/smartphone-call.svg" class="img-fluid" alt="Responsive image">
                             </td>
                         </tr>
@@ -294,7 +308,7 @@
                 <div class="col-4 prod-sel bg-white center-flex bdr">
                     <table>
                         <tr>
-                            <td style="padding-bottom: 8px;">
+                            <td class="text-center" style="padding-bottom: 8px;">
                                 <img width="100" style="padding:20" src="sico/football.svg" class="img-fluid" alt="Responsive image">
                             </td>
                         </tr>
@@ -309,7 +323,7 @@
                 <div class="col-4 prod-sel bg-white center-flex bdr">
                     <table>
                         <tr>
-                            <td style="padding-bottom: 8px;">
+                            <td class="text-center" style="padding-bottom: 8px;">
                                 <img width="100" style="padding:20" src="sico/stars.svg" class="img-fluid" alt="Responsive image">
                             </td>
                         </tr>
@@ -324,7 +338,7 @@
                 <div class="col-4 prod-sel bg-white center-flex">
                     <table>
                         <tr>
-                            <td style="padding-bottom: 8px;">
+                            <td class="text-center" style="padding-bottom: 8px;">
                                 <img width="100" style="padding:20" src="sico/roller.svg" class="img-fluid" alt="Responsive image">
                             </td>
                         </tr>
