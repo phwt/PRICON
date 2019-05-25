@@ -2,10 +2,6 @@ function scrollToAnchor(aid){
     var aTag = $("[sname='"+ aid +"']");
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
-
-function selNone(){
-    showAds(none);
-}
 $(document).ready(function() {
     var selected="";
     $(".prod-sel").click(function(){
@@ -13,10 +9,20 @@ $(document).ready(function() {
         showAds(selected);
     });
 
-    function showAds(type){
-        scrollToAnchor('ads');
-        $("#ads-1").attr("src", "ads/ads_"+type+"1.jpg");
-        $("#ads-2").attr("src", "ads/ads_"+type+"2.jpg");
+    var atype = ['elec', 'appr', 'health', 'phone', 'sport', 'lifes'];
+
+    window.showAds = function(type){
+        scrollToAnchor('acc');
+        if(type == ""){
+            $("#a-1").attr("src", "a/a_"+atype[Math.floor(Math.random()*6)]+"1.jpg");
+            $("#a-2").attr("src", "a/a_"+atype[Math.floor(Math.random()*6)]+"2.jpg");
+        }else{
+            $("#a-1").attr("src", "a/a_"+type+"1.jpg");
+            $("#a-2").attr("src", "a/a_"+type+"2.jpg");
+        }
     }
 
 });
+function selNone(){
+    showAds("");
+}
