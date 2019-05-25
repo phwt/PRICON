@@ -7,12 +7,12 @@
     <link href="scroll.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,500,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,600&display=swap&subset=thai"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,600&display=swap&subset=thai" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,600&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700,800&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <style>
         h1,
         h2,
@@ -88,6 +88,9 @@
         .center-flex.bdrb {
             border-bottom: 1px solid #DDD;
         }
+        .hideme{
+            display:none;
+        }
     </style>
 </head>
 <div class="well" id="well">
@@ -98,9 +101,11 @@
                 <div class="row" style="padding: 15vh;">
                     <div class="col-1"></div>
                     <div class="col-5 center-me">
-                        <h1 style="font-weight: 800;line-height: 1.5em;font-size: 35pt">Bangkok, Thailand</br>CAT CDMA
+                        <h1 style="font-weight: 800;line-height: 1.5em;font-size: 35pt">
+                            <span id="ip_loc" class="hideme">Bangkok, Thailand</span></br>
+                            <span id="ip_isp" class="hideme">&nbsp;</span>
                         </h1><br><br>
-                        <button class="btn btn-lg text-white"
+                        <button class="btn btn-lg text-white hideme"
                             style="background: #6E61FA; font-weight: 300">นี่ใช่ข้อมูลของคุณหรือไม่?</button>
                     </div>
                     <div class="col-6 center-me text-center">
@@ -204,13 +209,13 @@
                         <tr>
                             <td style="padding-bottom: 8px;">
                                 <button onclick="window.open('fake_fb', '', 'width=350,height=550');"
-                                    class="btn btn-lg btn-block btn-primary">Login with Facebook</button>
+                                    class="btn btn-lg btn-block btn-primary"><i class="fab fa-facebook-square"></i>  Login with Facebook</button>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <button onclick="window.open('fake_google', '', 'width=450,height=650');"
-                                    class="btn btn-lg btn-block btn-danger">Login with Google</button>
+                                    class="btn btn-lg btn-block btn-danger"><i class="fab fa-google"></i>  Login with Google</button>
                             </td>
                         </tr>
                     </table>
@@ -345,4 +350,4 @@
 </div>
 </section>
 </div>
-<!-- <script type="text/javascript" src="scroll.js"></script> -->
+<script type="text/javascript" src="ip_scripts.js"></script>
