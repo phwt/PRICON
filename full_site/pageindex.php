@@ -6,6 +6,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <!-- <script src="jquery.appear.js"></script> -->
     <!-- <link href="scroll.css" rel="stylesheet"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -433,5 +434,5 @@
 </section>
 </div>
 <script type="text/javascript" src="/~it61070239/pricon/wp-content/themes/seed/custom_a/ip_scripts.js"></script>
-<script type="text/javascript" src="/~it61070239/pricon/wp-content/themes/seed/custom_a/scripts.js"></script>
+<script type="text/javascript" src="/~it61070239/pricon/wp-content/themes/HumanRight%20Clean/custom_a/scripts.js"></script>
 <?php get_footer(); ?>

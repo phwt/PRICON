@@ -1,6 +1,7 @@
 function scrollToAnchor(aid){
-    var aTag = $("[sname='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    // var aTag = $("[sname='"+ aid +"']");
+    // $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    $(window).scrollTo($("[sname="+aid+"]"), 800);
 }
 $(document).ready(function() {
     setInterval(() => {
